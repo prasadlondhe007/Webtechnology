@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Complete HTML Webpage Example</title>
+</head>
+
+<body>
+
+    <h2>Registration Form</h2>
+
+    <form onsubmit="return submitButtonClick()">
+
+        <label>Name:</label><br>
+        <input type="text" id="name"><br>
+        <span id="nameError" style="color:red;"></span><br>
+
+        <label>Email:</label><br>
+        <input type="text" id="email"><br>
+        <span id="emailError" style="color:red;"></span><br>
+
+        <label>Password:</label><br>
+        <input type="password" id="password"><br>
+        <span id="passwordError" style="color:red;"></span><br>
+
+        <label>Select Course:</label><br>
+        <select id="course">
+            <option value="">--Select--</option>
+            <option>Java</option>
+            <option>CPP</option>
+            <option>OS</option>
+        </select><br>
+        <span id="courseError" style="color:red;"></span><br>
+
+        <label>Address:</label><br>
+        <textarea rows="4" id="address"></textarea><br>
+        <span id="addressError" style="color:red;"></span><br>
+
+        <input type="submit" value="submit">
+        <input type="reset" value="Clear">
+    </form>
+
+    <!-- Connect External JavaScript -->
+    <script src="exp_4.js"></script>
+
+</body>
+</html>
